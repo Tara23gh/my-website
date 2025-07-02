@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarandeep Singh</title>
+    <style>
+        body{
+            background-color: #e6f7ff;
+        }
+        h1{
+            color: darkblue;
+        }
+        img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Message</h1>
+    <p>
+        I am Tarandeep Singh, a B.tech First year Student persuing B.tech from Prestige Institute of Engineering Management & Reseach.
+        I am really passionate about how the websites work. So, I Started learning Full Stack web Development by CHAT GPT.
+    </p>
+    <button><a href="https://www.google.com" target="_blank">GO TO GOOGLE</a></button>
+    <button><a href="https://www.youtube.com" target="_blank">Go to Youtube</a></button>
+    <img src="https://cdn.wallpapersafari.com/23/12/gCG1cd.jpg" alt="">
+
+    <br><br>
+
+    <button onclick="changecolor()" id="btn">Change background-color</button>
+
+    <script>
+        colorobj = document.getElementById("btn");
+
+        function changecolor(){
+            const colors = ['blue','green','yellow'];
+            const randomcolor = colors[Math.floor(Math.random()* colors.length)];
+            document.body.style.backgroundColor= randomcolor;
+        }
+    </script>
+</body>
+</html>
